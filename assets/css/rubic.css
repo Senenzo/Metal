@@ -11477,7 +11477,10 @@ textarea {
   font-size: 2.4rem;
   font-weight: bold;
   opacity: .8;
-  color: #212529;
+}
+
+.header-title span{
+  opacity: .7;
 }
 
 .header-mini {
@@ -11505,7 +11508,7 @@ textarea {
   background: #ffd1aa;
 }
 
-.header-content{
+.header-content p{
   text-align: justify;
   padding-right: 40px;
 }
@@ -11747,4 +11750,11 @@ img.tower {
 
 .features .tab-pane p:last-child {
   margin-bottom: 0;
+}
+
+/* Hide the button on screens wider than 768 pixels */
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
 }
