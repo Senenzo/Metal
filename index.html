@@ -247,9 +247,9 @@
 
     <section class="section has-img-bg text-center">
         <div class="container">
-            <h6 class="display-3 has-line">So, What Are You Waiting For?</h6>
-            <h5 class="mb-5 font-weight-light">If you still have any questions or hesitations, take the next step by downloading our catalog using the button below. For any inquiries or to request a quotation, don't hesitate to contact us now. Your leathercraft journey begins here.</h5>
-            <button class="btn btn-outline-light btn-flat">Download Catalog</button>
+            <h6 class="display-3 has-line">Explore More!</h6>
+            <h5 class="mb-5 font-weight-light">Visit another one of our stores and indulge in a world of exquisite accessories designed to complement your every look.</h5>
+            <a href="https://chic-travesseiro-7bddca.netlify.app/" target="_blank"><button class="btn btn-outline-light btn-flat">Visit Site</button></a>
         </div>
     </section>
 
@@ -294,6 +294,23 @@
         </div>
     </footer>
 	
+    <!-- contact form -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "username",
+                Password : "password",
+                To : 'them@website.com',
+                From : "you@isp.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+        }
+    </script>
 	<!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
